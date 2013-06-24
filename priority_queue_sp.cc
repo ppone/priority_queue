@@ -1,3 +1,7 @@
+/*@author: Parag Patel
+  @github: 
+*/
+
 #include <iostream>
 #include <string>
 #include <cmath>
@@ -5,6 +9,17 @@
 
 using namespace std;
 
+
+/* Priority Queue implementation in C++, implementation with a binary heap that is implemented with set of 5 pointers per node
+parent,leftchild,rightchild,leftsibling, rightsibling.  We mantain reference to first node in each level in a stack and determine if a node
+is in the last node in a level, through log2(current->id + 1) == level.   
+
+THIS CODE IS STILL BEING TESTED AND NOT STABLE. NEED TO TEST PERFORMANCE VS ARRAY IMPLEMENTATION. Code should use more memory, but yet
+be more dynamic without having need to reallocate once maximum array size is hit.
+
+TODO: REMOVE childrenFilled filed, has it is a bit redundant.
+
+*/
 
 struct Node
 {
